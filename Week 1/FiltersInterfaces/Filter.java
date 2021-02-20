@@ -1,3 +1,5 @@
+package FiltersInterfaces;
+
 
 /**
  * Write a description of interface Filter here.

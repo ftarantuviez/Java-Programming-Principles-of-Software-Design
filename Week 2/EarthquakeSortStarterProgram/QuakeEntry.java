@@ -1,5 +1,3 @@
-package FiltersInterfaces;
-
 
 public class QuakeEntry implements Comparable<QuakeEntry>{
 	
