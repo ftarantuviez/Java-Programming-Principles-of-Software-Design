@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class MarkovRunner here.
+ * Word N-Grams
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Deny Kiantono
+ * @version 1.0
  */
 
 import edu.duke.*;
@@ -33,8 +33,17 @@ public class MarkovRunner {
         String st = fr.asString(); 
         st = st.replace('\n', ' '); 
         MarkovWordOne markovWord = new MarkovWordOne(); 
-        runModel(markovWord, st, 200); 
+        runModel(markovWord, st, 120, 175);
+        //runModel(markovWord, st, 200); 
     } 
+    
+    public void runMarkovTwo() {
+        FileResource fr = new FileResource(); 
+        String st = fr.asString(); 
+        st = st.replace('\n', ' '); 
+        MarkovWordTwo markovWord = new MarkovWordTwo();
+        runModel(markovWord, st, 120, 549);
+    }
 
     private void printOut(String s){
         String[] words = s.split("\\s+");
