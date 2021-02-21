@@ -49,7 +49,7 @@ public class MarkovRunnerWithInterface {
     }
     
     public void testHashMap() {
-        int seed = 615;
+        int seed = 531;
         int size = 50;
         FileResource fr = new FileResource();
         String st = fr.asString();

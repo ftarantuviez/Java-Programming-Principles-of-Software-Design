@@ -17,7 +17,7 @@ public class Tester {
         st = st.replace('\n', ' ');
         MarkovOne markov = new MarkovOne();
         markov.setTraining(st);
-        ArrayList<String> follows = markov.getFollows("th");
-        System.out.println("Number of characters that follows 'th':: " + follows.size());
+        ArrayList<String> follows = markov.getFollows("he");
+        System.out.println("Number of characters that follows 'he':: " + follows.size());
     }
 }

@@ -1,4 +1,4 @@
-
+    
 /**
  * Write a description of class MarkovRunner here.
  * 
@@ -38,21 +38,19 @@ public class MarkovRunner {
         FileResource fr = new FileResource(); 
         String st = fr.asString(); 
         st = st.replace('\n', ' '); 
-        MarkovWord mw = new MarkovWord(3);
-        runModel(mw, st, 200, 643);
+        MarkovWord mw = new MarkovWord(5);
+        runModel(mw, st, 100, 844);
     } 
     
     public void testHashMap() {
-        String st = "this is a test yes this is really a test";
-        EfficientMarkovWord emw = new EfficientMarkovWord(2);
-        emw.setRandom(42);
+        FileResource fr = new FileResource(); 
+        String st = fr.asString(); 
+        st = st.replace('\n', ' '); 
+        EfficientMarkovWord emw = new EfficientMarkovWord(3);
+        emw.setRandom(371);
         emw.setTraining(st);
-        emw.getRandomText(50);
-        
-        st = "this is a test yes this is really a test yes a test this is wow";
-        emw.setRandom(42);
-        emw.setTraining(st);
-        emw.getRandomText(50);
+        //emw.getRandomText();
+        emw.printHashMapInfo();
     }
     
     public void compareMethods() {
